@@ -10,21 +10,24 @@ export function Header() {
         <Image
           src="/shanti.png"
           alt="logo"
-          width={50}
-          height={50}
+          width={70}
+          height={70}
           className="rounded-full"
         />
       </div>
 
       <div>
-        <Link href="/" className="font-medium text-black dark:text-white">
+        <Link
+          href="/"
+          className="text-xl font-medium text-black dark:text-white"
+        >
           Shantilal Patliya
         </Link>
         <TextEffect
           as="p"
           preset="fade"
           per="char"
-          className="text-zinc-600 dark:text-zinc-500"
+          className="text-lg text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
           Front-end Developer

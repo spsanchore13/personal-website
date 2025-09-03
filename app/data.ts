@@ -2,7 +2,10 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  techStacks: string[]
+  github: string
+  live: string
+  image: string
   id: string
 }
 
@@ -24,7 +27,6 @@ export type Education = {
   id: string
 }
 
-
 type BlogPost = {
   title: string
   description: string
@@ -41,35 +43,80 @@ export const PROJECTS: Project[] = [
   {
     name: 'MyWealth',
     description:
-      'Advanced components and templates to craft beautiful websites.',
+      'MyWealth: Smart investment platform for tracking, managing, and growing wealth effortlessly.',
     link: 'https://mywealth.fabits.com/login',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+    image: '/my-wealth.png',
     id: 'project1',
+    techStacks: [
+      'React',
+      'JavaScript',
+      'Material UI',
+      'TailwindCSS',
+      'Recoil',
+      'shadcn/ui, Zustand',
+    ],
+    github: '',
+    live: 'https://mywealth.fabits.com/login',
   },
   {
     name: 'Genius AI',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    description:
+      'AI SaaS: Chat, code, images, music, videos, with Stripe payments and Crisp support.',
+    link: 'https://next-js-ai-saas.vercel.app/',
+    image: '/genius-ai.png',
     id: 'project2',
+    techStacks: [
+      'React.js',
+      'Next.js',
+      'Tailwind CSS',
+      'TypeScript',
+      'Node.js',
+      'Clerk Auth',
+      'Crisp Chat',
+      'OpenAI',
+      'DALL.E',
+      'Replicate AI',
+    ],
+    github: 'https://github.com/spsanchore13/next-js-ai-saas',
+    live: 'https://next-js-ai-saas.vercel.app/',
   },
-    {
+  {
     name: 'Discord Clone',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    description:
+      'Discord Clone: Create servers, channels, chat, call, and manage members with socket.io & Livkit SDK.',
+    link: 'https://github.com/spsanchore13/next.js-discord-clone',
+    image: '/genius-ai.png',
     id: 'project3',
+    techStacks: [
+      'React.js',
+      'Next.js',
+      'Tailwind CSS',
+      'TypeScript',
+      'Node.js',
+      'Clerk Auth',
+      'Socket.IO',
+      'shadcn/ui',
+    ],
+    github: 'https://github.com/spsanchore13/next.js-discord-clone',
+    live: '',
   },
-    {
+  {
     name: 'CarHub',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    description:
+      'Car Showcase: Interactive Next.js app to explore and display car models seamlessly.',
+    link: 'https://next-js-cars-showcase.vercel.app/',
+    image: '/car-hub.png',
     id: 'project4',
+    techStacks: [
+      'React.js',
+      'Next.js',
+      'Tailwind CSS',
+      'TypeScript',
+      'Headless UI',
+      'Rapid Car API',
+    ],
+    github: 'https://github.com/yourusername/carhub',
+    live: 'https://next-js-cars-showcase.vercel.app/',
   },
 ]
 
@@ -100,10 +147,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   // },
 ]
 
-
-
 export const EDUCATION: Education[] = [
-    {
+  {
     institution: 'Masai School',
     degree: 'Full Stack Web Development Program',
     start: '2022',
@@ -126,59 +171,56 @@ export const EDUCATION: Education[] = [
     end: '2015',
     link: '',
     id: 'edu2',
-  }
+  },
 ]
 
 export const SKILLS: string[] = [
   // Languages
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "HTML5",
-  "CSS3",
+  'JavaScript (ES6+)',
+  'TypeScript',
+  'HTML5',
+  'CSS3',
 
   // Frontend
-  "React.js",
-  "Next.js",
-  "Tailwind CSS",
-  "shadcn/ui",
-  "Material UI (MUI)",
-  "UI/UX Collaboration",
+  'React.js',
+  'Next.js',
+  'Tailwind CSS',
+  'shadcn/ui',
+  'Material UI (MUI)',
+  'UI/UX Collaboration',
   // "Accessibility",
 
-
   // State Management
-  "Redux",
-  "Recoil",
-  "Zustand",
+  'Redux',
+  'Recoil',
+  'Zustand',
 
   // Backend
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "REST APIs",
+  'Node.js',
+  'Express.js',
+  'MongoDB',
+  'REST APIs',
 
   // Testing
-  "Cypress",
-  "Jest",
-  "React Testing Library",
+  'Cypress',
+  'Jest',
+  'React Testing Library',
 
   // Tools & Deployment
-  "Git & GitHub",
-  "AWS (S3, CloudFront, EC2)",
-  "Capacitor.js",
-  "Cordova",
-  "Xcode Deployment",
-  "Android Studio",
-  "Figma",
+  'Git & GitHub',
+  'AWS (S3, CloudFront, EC2)',
+  'Capacitor.js',
+  'Cordova',
+  'Xcode Deployment',
+  'Android Studio',
+  'Figma',
 
   // // Domain Knowledge
   // "Financial Applications Development",
   // "Mutual Fund Investing Platforms",
   // "SEO Optimization",
   // "AI Integration (LSTMs, Price Prediction)"
-];
-
-
+]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
@@ -203,7 +245,8 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
+    description:
+      'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
     link: '/blog/example-mdx-metadata',
     uid: 'blog-4',
   },
@@ -221,8 +264,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/spsanchore13/',
-  }
- 
+  },
 ]
 
 export const EMAIL = 'developer.shantilal@email.com'
