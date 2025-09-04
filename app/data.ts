@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
     description:
       'Discord Clone: Create servers, channels, chat, call, and manage members with socket.io & Livkit SDK.',
     link: 'https://github.com/spsanchore13/next.js-discord-clone',
-    image: '/genius-ai.png',
+    image: '/discord.png',
     id: 'project3',
     techStacks: [
       'React.js',
@@ -124,7 +124,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Fabits',
     title: 'Front-end Developer',
-    start: '2024',
+    start: 'May 2024',
     end: 'Present',
     link: 'https://fabits.com',
     id: 'work1',
@@ -132,8 +132,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Masai School',
     title: 'Full Stack Developer (Problem Setter)',
-    start: '2022',
-    end: '2024',
+    start: 'Fab 2023',
+    end: 'Fab 2024',
     link: 'https://masaischool.com',
     id: 'work2',
   },
@@ -151,26 +151,26 @@ export const EDUCATION: Education[] = [
   {
     institution: 'Masai School',
     degree: 'Full Stack Web Development Program',
-    start: '2022',
-    end: '2023',
+    start: 'Apr 2022',
+    end: 'Fab 2023',
     link: 'https://www.masaischool.com',
-    id: 'edu0',
+    id: 'edu2',
   },
   {
     institution: 'Rajasthan Technical University',
     degree: 'Bachelor of Technology (B.Tech) in Computer Science',
-    start: '2015',
-    end: '2019',
+    start: 'Jun 2015',
+    end: 'Jun 2019',
     link: 'https://www.rtu.ac.in',
     id: 'edu1',
   },
   {
     institution: 'Gayatri Vidhya Mandir Sr Sec School Sanchore',
     degree: 'Class XII (Science Stream - PCM)',
-    start: '2014',
-    end: '2015',
+    start: 'May 2014',
+    end: 'May 2015',
     link: '',
-    id: 'edu2',
+    id: 'edu0',
   },
 ]
 

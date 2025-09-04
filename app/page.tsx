@@ -120,7 +120,8 @@ function ProjectDetails({
                     href={github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+                    tabIndex={-1}
+                    className="inline-flex items-center gap-2 text-zinc-700 outline-none transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
                   >
                     <svg
                       className="h-4 w-4"
