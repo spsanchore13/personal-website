@@ -204,7 +204,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Frontend Developer with 2.3 years of experience in React, Next.js,
+            Frontend Developer with 3+ years of experience in React, Next.js,
             Tailwind, and TypeScript. Skilled in building scalable fintech
             platforms, cross-platform apps (Capacitor.js), and seamless UI/UX
             integrations. Strong in API integrations, testing (Cypress, Jest,
